@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ml.BenchmarkActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="416dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="6dp"
+        android:text="PreProcessTime"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/preProcessTime"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="6dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="InferenceTime"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/inferenceTime"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/preProcessTime" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="PostProcessTime"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/postProcessTime"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/inferenceTime" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="102dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="0/5000"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:text="averagePrecision"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/AP"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/postProcessTime" />
+
+    <TextView
+        android:id="@+id/TP"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="46dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/postProcessTime"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/FN"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/TP"
+        app:layout_constraintTop_toBottomOf="@+id/TP" />
+
+    <TextView
+        android:id="@+id/FP"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/TP"
+        app:layout_constraintTop_toTopOf="@+id/TP" />
+
+    <TextView
+        android:id="@+id/TN"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/FN"
+        app:layout_constraintTop_toBottomOf="@+id/FP" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:text="average Recall"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/AR"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/AP" />
+
+    <TextView
+        android:id="@+id/preProcessTimeAvg"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/preProcessTime"
+        app:layout_constraintTop_toTopOf="@+id/preProcessTime" />
+
+    <TextView
+        android:id="@+id/inferenceTimeAvg"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/inferenceTime"
+        app:layout_constraintTop_toBottomOf="@+id/preProcessTimeAvg" />
+
+    <TextView
+        android:id="@+id/postProcessTimeAvg"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/postProcessTime"
+        app:layout_constraintTop_toBottomOf="@+id/inferenceTimeAvg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

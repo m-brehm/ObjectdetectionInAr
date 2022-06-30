@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce652197de234a88bdf41e2dd1819, type: 3}
+  m_Name: YoloV4Tiny
+  m_EditorClassIdentifier: 
+  model: {fileID: 5022602860645237092, guid: 1c0b0ea2614242f478b5311034c3be61, type: 3}
+  anchors:
+  - 10
+  - 14
+  - 23
+  - 27
+  - 37
+  - 58
+  - 81
+  - 82
+  - 135
+  - 169
+  - 344
+  - 319
+  preprocess: {fileID: 7200000, guid: aa33edef0ab0de3459164bdfb11fa49c, type: 3}
+  postprocess1: {fileID: 7200000, guid: 29635655508a4eb459bd0f138a611394, type: 3}
+  postprocess2: {fileID: 7200000, guid: c5756050aec8546419553d780c80be97, type: 3}
